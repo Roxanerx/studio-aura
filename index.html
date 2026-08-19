@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Studio Aura — Design de interiores de alto padrão em São Paulo. Luxo discreto, curadoria e projetos exclusivos por Marina Vasconcelos."
+    />
+    <title>Studio Aura | Design de Interiores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+
+    <header class="header" id="header">
+      <div class="header__inner container">
+        <a href="#" class="header__logo" aria-label="Studio Aura — início">
+          <span class="header__logo-text">Studio Aura</span>
+        </a>
+
+        <button
+          type="button"
+          class="header__toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Abrir menu de navegação"
+        >
+          <span class="header__toggle-bar"></span>
+          <span class="header__toggle-bar"></span>
+        </button>
+
+        <nav class="header__nav" id="nav-menu" aria-label="Principal">
+          <ul class="header__links">
+            <li><a href="#portfolio" class="header__link">Portfólio</a></li>
+            <li><a href="#processo" class="header__link">Processo</a></li>
+            <li><a href="#sobre" class="header__link">Sobre</a></li>
+            <li><a href="#contato" class="header__link">Contato</a></li>
+          </ul>
+          <a href="#contato" class="btn btn--outline header__cta">Consultoria</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-label="Apresentação">
+        <div class="hero__media" aria-hidden="true">
+          <video
+            class="hero__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="src/assets/projeto-terracota.png"
+          >
+            <source src="src/assets/interior-dark-video.mp4" type="video/mp4" />
+          </video>
+          <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content container reveal">
+          <h1 class="hero__title">Studio Aura: A arte do luxo discreto</h1>
+          <p class="hero__subtitle">
+            Design de interiores e arquitetura de alto padrão em São Paulo.
+          </p>
+          <a href="#portfolio" class="btn btn--outline hero__cta">Ver nossos projetos</a>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span class="hero__scroll-line"></span>
+        </div>
+      </section>
+
+      <!-- Build Sequence (vídeo + painéis no scroll) -->
+      <section
+        class="build-sequence"
+        id="build-sequence"
+        aria-label="Sequência do processo Studio Aura"
+      >
+        <div class="build-sequence__spacer" aria-hidden="true"></div>
+        <div class="build-sequence__stage" id="build-sequence-stage">
+          <video
+            class="build-sequence__video"
+            src="src/assets/video-camadas.mp4"
+            muted
+            playsinline
+            webkit-playsinline
+            preload="auto"
+          ></video>
+          <div class="build-sequence__overlay" aria-hidden="true"></div>
+
+          <div class="build-sequence__panels">
+            <article class="build-sequence__panel build-sequence__panel--left">
+              <p class="label-caps build-sequence__eyebrow">01 — Curadoria</p>
+              <h2 class="build-sequence__title">Leitura do espaço</h2>
+              <p class="build-sequence__text">
+                Escuta ativa, conceito visual e seleção de materiais com critério
+                editorial — a base silenciosa de cada projeto Aura.
+              </p>
+            </article>
+
+            <article class="build-sequence__panel build-sequence__panel--right">
+              <p class="label-caps build-sequence__eyebrow">02 — Criação</p>
+              <h2 class="build-sequence__title">Projeto executivo</h2>
+              <p class="build-sequence__text">
+                Plantas, especificações e visualizações que antecipam luz,
+                textura e mobiliário sob medida antes da primeira obra.
+              </p>
+            </article>
+
+            <article class="build-sequence__panel build-sequence__panel--left">
+              <p class="label-caps build-sequence__eyebrow">03 — Concretização</p>
+              <h2 class="build-sequence__title">Entrega impecável</h2>
+              <p class="build-sequence__text">
+                Acompanhamento de obra e acabamentos até a entrega final —
+                cada detalhe preserva a intenção do conceito original.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Processo -->
+      <section class="process section" id="processo" aria-labelledby="processo-titulo">
+        <div class="container">
+          <header class="section__header reveal">
+            <p class="label-caps section__eyebrow">Como criamos realidades</p>
+            <h2 class="section__title" id="processo-titulo">Nosso Processo</h2>
+          </header>
+
+          <div class="process__grid">
+            <article class="process__step reveal" style="--reveal-delay: 0ms">
+              <span class="process__number" aria-hidden="true">01</span>
+              <h3 class="process__name">Curadoria</h3>
+              <p class="process__text">
+                Escuta ativa, leitura do espaço e definição de um conceito visual
+                alinhado ao seu estilo de vida. Selecionamos materiais, paletas e
+                referências com critério editorial.
+              </p>
+              <figure class="process__visual">
+                <img
+                  src="src/assets/projeto-biblioteca.png"
+                  alt="Curadoria: biblioteca residencial com materiais e referências selecionadas"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+
+            <article class="process__step reveal" style="--reveal-delay: 120ms">
+              <span class="process__number" aria-hidden="true">02</span>
+              <h3 class="process__name">Criação</h3>
+              <p class="process__text">
+                Desenvolvimento do projeto executivo com plantas, especificações
+                e visualizações que antecipam cada ambiente — da luz à
+                mobiliário sob medida.
+              </p>
+              <figure class="process__visual">
+                <img
+                  src="src/assets/projeto-sala-2.png"
+                  alt="Criação: visualização de sala de jantar com iluminação e mobiliário projetados"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+
+            <article class="process__step reveal" style="--reveal-delay: 240ms">
+              <span class="process__number" aria-hidden="true">03</span>
+              <h3 class="process__name">Concretização</h3>
+              <p class="process__text">
+                Acompanhamento de obra, fornecedores e acabamentos até a entrega
+                final. Cada detalhe é supervisionado para preservar a intenção do
+                projeto.
+              </p>
+              <figure class="process__visual">
+                <img
+                  src="src/assets/projeto-banheiro.png"
+                  alt="Concretização: banheiro finalizado com mármore e acabamentos de alto padrão"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfólio -->
+      <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-titulo">
+        <div class="container">
+          <header class="portfolio__header reveal">
+            <h2 class="portfolio__title" id="portfolio-titulo">
+              Projetos que Definem uma Nova Era de Luxo
+            </h2>
+            <p class="label-caps portfolio__label">Seleção de projetos recentes</p>
+          </header>
+
+          <div class="portfolio__grid reveal" role="list">
+            <figure class="portfolio__item portfolio__item--1 portfolio__item--landscape" role="listitem">
+              <img
+                src="src/assets/projeto-terracota.png"
+                alt="Sala de estar em tons terracota com sofá, lareira e iluminação dourada"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="portfolio__item portfolio__item--2 portfolio__item--portrait" role="listitem">
+              <img
+                src="src/assets/projeto-banheiro.png"
+                alt="Banheiro de luxo com mármore cinza, banheira oval e metais pretos"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="portfolio__item portfolio__item--3 portfolio__item--portrait-tall" role="listitem">
+              <img
+                src="src/assets/projeto-cozinha.png"
+                alt="Cozinha gourmet com ilha em mármore, armários verde-sálvia e pendentes dourados"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="portfolio__item portfolio__item--4 portfolio__item--landscape" role="listitem">
+              <img
+                src="src/assets/projeto-sala-2.png"
+                alt="Sala de jantar contemporânea com mesa em madeira e luminária em cobre"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="portfolio__item portfolio__item--5 portfolio__item--landscape" role="listitem">
+              <img
+                src="src/assets/projeto-quarto.png"
+                alt="Suíte master com cabeceira capitonê, mesas de cabeceira e pendentes esféricos"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="portfolio__item portfolio__item--6 portfolio__item--landscape" role="listitem">
+              <img
+                src="src/assets/projeto-biblioteca.png"
+                alt="Biblioteca residencial com estantes em madeira, poltrona em couro e tapete persa"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="portfolio__item portfolio__item--7 portfolio__item--landscape-wide" role="listitem">
+              <img
+                src="src/assets/projeto-sala.png"
+                alt="Ambiente de jantar integrado à área verde com marcenaria e cadeiras em couro"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section class="about section" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="container about__grid">
+          <div class="about__media reveal">
+            <img
+              src="src/assets/marina-vasconcelos.jpg"
+              alt="Retrato em preto e branco da arquiteta Marina Vasconcelos"
+              class="about__photo"
+              loading="lazy"
+              width="560"
+              height="720"
+            />
+          </div>
+          <div class="about__content reveal" style="--reveal-delay: 150ms">
+            <p class="label-caps section__eyebrow">A mente por trás do Studio</p>
+            <h2 class="section__title" id="sobre-titulo">Marina Vasconcelos</h2>
+            <div class="about__body">
+              <p>
+                Arquiteta e fundadora do Studio Aura, Marina constrói ambientes que
+                equilibram silêncio visual e conforto sensorial. Com mais de uma
+                década em projetos residenciais e corporativos em São Paulo, sua
+                assinatura combina curadoria rigorosa e execução impecável.
+              </p>
+              <p>
+                Formada pela FAU-USP e com especialização em design de interiores
+                na Europa, Marina lidera cada entrega com a precisão de quem trata
+                o lar como obra de arte habitável — sem excessos, sem ruído.
+              </p>
+              <p>
+                Para ela, luxo é a capacidade de viver com propósito: espaços que
+                respiram, envelhecem bem e contam a história de quem os habita.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos -->
+      <section class="testimonials section" id="depoimentos" aria-labelledby="depoimentos-titulo">
+        <div class="container">
+          <h2 class="visually-hidden" id="depoimentos-titulo">Depoimentos de clientes</h2>
+          <div class="testimonials__grid">
+            <blockquote class="testimonial reveal" style="--reveal-delay: 0ms">
+              <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+              <p class="testimonial__text">
+                Marina traduziu nossa rotina em ambientes que parecem ter existido
+                sempre. A obra foi conduzida com transparência e um olhar
+                obsessivo por acabamento.
+              </p>
+              <footer class="testimonial__author">
+                <cite>Helena Ribeiro</cite>
+                <span>Residencial — Jardins, SP</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial reveal" style="--reveal-delay: 120ms">
+              <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+              <p class="testimonial__text">
+                O escritório corporativo ganhou uma identidade sóbria que impressiona
+                visitantes sem parecer ostensivo. Cada reunião começa com a sensação
+                de estar no lugar certo.
+              </p>
+              <footer class="testimonial__author">
+                <cite>Ricardo Almada</cite>
+                <span>Corporativo — Faria Lima, SP</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial reveal" style="--reveal-delay: 240ms">
+              <span class="testimonial__quote" aria-hidden="true">&ldquo;</span>
+              <p class="testimonial__text">
+                Do primeiro briefing à entrega das chaves, sentimos que estávamos
+                em boas mãos. O resultado superou referências que trouxemos de
+                hotéis boutique na Europa.
+              </p>
+              <footer class="testimonial__author">
+                <cite>Camila e Thomaz Duarte</cite>
+                <span>Residencial — Alto de Pinheiros, SP</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="contact section" id="contato" aria-labelledby="contato-titulo">
+        <div class="container contact__grid">
+          <div class="contact__info reveal">
+            <h2 class="section__title" id="contato-titulo">Inicie sua Transformação</h2>
+            <p class="contact__lead">
+              Estamos prontos para ouvir seus desejos e transformá-los em um projeto
+              exclusivo. Preencha o formulário ou fale conosco diretamente.
+            </p>
+            <ul class="contact__details">
+              <li>
+                <svg class="contact__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+                </svg>
+                <span>Alameda Santos, 847 — Jardins, São Paulo — SP</span>
+              </li>
+              <li>
+                <svg class="contact__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <a href="mailto:contato@studioaura.com.br">contato@studioaura.com.br</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form reveal" id="contact-form" novalidate style="--reveal-delay: 150ms">
+            <div class="form-field" data-field="nome">
+              <label class="label-caps form-field__label" for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="form-field__input"
+                autocomplete="name"
+                required
+                minlength="2"
+              />
+              <p class="form-field__error" role="alert" hidden></p>
+            </div>
+
+            <div class="form-field" data-field="email">
+              <label class="label-caps form-field__label" for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-field__input"
+                autocomplete="email"
+                required
+              />
+              <p class="form-field__error" role="alert" hidden></p>
+            </div>
+
+            <div class="form-field" data-field="mensagem">
+              <label class="label-caps form-field__label" for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="form-field__input form-field__textarea"
+                rows="4"
+                required
+                minlength="10"
+              ></textarea>
+              <p class="form-field__error" role="alert" hidden></p>
+            </div>
+
+            <button type="submit" class="btn btn--solid form__submit">
+              Enviar mensagem
+            </button>
+            <p class="form__success" id="form-success" role="status" hidden>
+              Mensagem recebida. Retornaremos em até 48 horas úteis.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__top">
+        <a href="#" class="footer__logo">Studio Aura</a>
+        <nav class="footer__social" aria-label="Redes sociais">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+      <div class="container footer__bottom">
+        <p class="footer__copy">&copy; <span id="year"></span> Studio Aura. Todos os direitos reservados.</p>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="#">Políticas</a>
+          <a href="#">Termos de uso</a>
+          <a href="#">FAQ</a>
+        </nav>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consultoria%20com%20o%20Studio%20Aura."
+      class="whatsapp-fab"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
+      </svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+
